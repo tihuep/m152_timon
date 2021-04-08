@@ -93,3 +93,12 @@ body {
   height: 65px;
   margin: 1vh;
 }
+
+.myFooter {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 5vh;
+  margin-bottom: -3vh;
+}

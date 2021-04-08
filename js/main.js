@@ -12,7 +12,6 @@ document.addEventListener("scroll", function(oEvent) {
                     ";-moz-transform: " + rotationStr + 
                     "; transform:" + rotationStr;
     });
-    console.log(rotationStr);
 });
 
 document.querySelector("#sidebarCollapse").addEventListener("click", function(oEvent) {
@@ -29,4 +28,3 @@ document.querySelector("#sidebarCollapse").addEventListener("click", function(oE
         document.querySelector("#sidebarCollapse").style.marginLeft = "0";
     }
 });
-
