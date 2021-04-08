@@ -72,6 +72,7 @@ body {
   height: 60vh;
   background: url("../img/banner.jpg") top center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #hero h1 {
@@ -101,4 +102,8 @@ body {
   vertical-align: bottom;
   margin-top: 5vh;
   margin-bottom: -3vh;
+}
+
+.nav-item { 
+  padding-bottom: 2vh;
 }
