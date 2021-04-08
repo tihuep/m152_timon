@@ -29,78 +29,45 @@ document.querySelector("#sidebarCollapse").addEventListener("click", function(oE
     }
 });
 
+
+var aNavItems = ["navHome", "navAbout", "navApprenticeship", "navContact", "navImpressum"];
+function toggleNavHighlight(highlightedItem) {
+    aNavItems.forEach(function(item){
+        if (item == highlightedItem){
+            document.querySelector("#" + item).classList.add("bg-light");
+        }else{
+            document.querySelector("#" + item).classList.remove("bg-light");
+        }
+    });
+}
+
 var currentUrl = window.location.href;
-console.log(currentUrl);
 if (currentUrl.indexOf("#about") > 0){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.add("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navAbout");
 }else if (currentUrl.indexOf("#apprenticeship") > 0){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.add("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navApprenticeship");
 }else if (currentUrl.indexOf("#contact") > 0){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.add("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navContact");
 }else if (currentUrl.indexOf("#impressum") > 0){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.add("bg-light");
+    toggleNavHighlight("navImpressum");
 }else{
-    document.querySelector("#navHome").classList.add("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navHome");
 }
 
 document.querySelector("#navHome").addEventListener("click", function(oEvent){
-    document.querySelector("#navHome").classList.add("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navHome");
 });
-
 document.querySelector("#navAbout").addEventListener("click", function(oEvent){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.add("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navAbout");
 });
-
 document.querySelector("#navApprenticeship").addEventListener("click", function(oEvent){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.add("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navApprenticeship");
 });
-
 document.querySelector("#navContact").addEventListener("click", function(oEvent){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.add("bg-light");
-    document.querySelector("#navImpressum").classList.remove("bg-light");
+    toggleNavHighlight("navContact");
 });
-
 document.querySelector("#navImpressum").addEventListener("click", function(oEvent){
-    document.querySelector("#navHome").classList.remove("bg-light");
-    document.querySelector("#navAbout").classList.remove("bg-light");
-    document.querySelector("#navApprenticeship").classList.remove("bg-light");
-    document.querySelector("#navContact").classList.remove("bg-light");
-    document.querySelector("#navImpressum").classList.add("bg-light");
+    toggleNavHighlight("navImpressum");
 });
 
 

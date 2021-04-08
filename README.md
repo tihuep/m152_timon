@@ -1,4 +1,4 @@
-# m152_thstudios
+# m152_timon
 
 ThStudios is an imagimary Web-Development Studio.
 
@@ -14,10 +14,14 @@ https://www.webmart.de/web/harmonische-farben#ff7b00:t:s:g:d
 
 Trebuchet MS
 
-### Inspiratoin
+### Inspiration
 
 https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 
 https://bootstrapious.com/p/bootstrap-vertical-navbar
 
 https://stackoverflow.com/questions/18540474/how-to-rotate-image-when-scrolling-using-css-transform/18540800 - http://jsfiddle.net/g3k6h/5/
+
+### Sources
+
+https://undraw.co/illustrations
