@@ -12,6 +12,19 @@ document.addEventListener("scroll", function(oEvent) {
                     ";-moz-transform: " + rotationStr + 
                     "; transform:" + rotationStr;
     });
+
+
+    if (window.scrollY-20 >= document.querySelector("#hero").offsetTop && window.scrollY-20 < document.querySelector("#about").offsetTop){
+        toggleNavHighlight("navHome");
+    }else if (window.scrollY-20 >= document.querySelector("#about").offsetTop && window.scrollY-20 < document.querySelector("#apprenticeship").offsetTop){
+        toggleNavHighlight("navAbout");
+    }else if (window.scrollY-20 >= document.querySelector("#apprenticeship").offsetTop && window.scrollY-20 < document.querySelector("#contact").offsetTop){
+        toggleNavHighlight("navApprenticeship");
+    }else if (window.scrollY-20 >= document.querySelector("#contact").offsetTop && window.scrollY-20 < document.querySelector("#impressum").offsetTop){
+        toggleNavHighlight("navContact");
+    }else if (window.scrollY-20 >= document.querySelector("#impressum").offsetTop){
+        toggleNavHighlight("navImpressum");
+    }
 });
 
 document.querySelector("#sidebarCollapse").addEventListener("click", function(oEvent) {
