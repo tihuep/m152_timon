@@ -8,7 +8,7 @@ Following is the styleguide of this website.
 
 ### Colors
 
-https://www.webmart.de/web/harmonische-farben#ff7b00:t:s:g:d
+https://www.webmart.de/web/harmonische-farben#145b01:t:s:g:d
 
 ### Fonts
 
