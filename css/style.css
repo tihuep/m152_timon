@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
 }
 
@@ -25,6 +25,10 @@
   width: 100%;
   margin: 0;
 }
+
+.active{
+}
+
 
 #sidebarCollapse {
   display: none;
@@ -85,7 +89,7 @@ body {
   margin-right: 2vh;
   margin-bottom: 2vh;
   margin-left: 10vh;
-  max-width: 100vh;
+  max-width: 130vh;
 }
 
 .profilePicture {
@@ -108,3 +112,10 @@ body {
   padding-bottom: 2vh;
 }
 
+h1 {
+  color: #2a4b01;
+}
+
+.bg-light { 
+  background-color: rgba(0, 0, 0, .2) !important;
+}
